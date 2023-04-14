@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Institute platform of Learning">
+    <meta name="author" content="Omoyinmi Abiodun Festus">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="/img/IMG-20230412-WA0015.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/CustomStyle.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+    <title>Home | ACOMORAN</title>
+</head>
+<body>
+    <div class="loader">
+        <div id="preloader">
+        </div>
+    </div>
+    <!-------------------Navigation section----------------->
+    <nav class="navbar navbar-expand-lg py-0" style="background-color: #fff;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/img/IMG-20230412-WA0015.jpg" class="rounded" alt="logo" width="80" height="50"></a>
+            <button class="navbar-toggler navbar-dark btn btn-outline-light" style="background-color: #009808;" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="#navbarOffcanvasLg">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                <div class="offcanvas-header">
+                    <img src="/img/IMG-20230412-WA0015.jpg" class="offcanvas-title rounded" id="offcanvasNavbarLabel" alt="logo" width="80" height="50">
+                    <button type="button" class="btn-close text-reset navbar-dark bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav px-3 d-flex justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-success" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover_me  text-success" href="#about_us">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover_me  text-success" href="#team">TEAM</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link hover_me text-success dropdown-toggle" href="#courses" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            PROJECTS
+                        </a>
+                        <ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://docs.google.com/presentation/d/1MIYCSKip4K5HWHIwlser3V9AaQakFCO_pbGN9lj3fvI/edit#slide=id.p" target="_blank">Building | Ultra Mordern State Secretariat</a></li>
+                            <li><a class="dropdown-item" href="https://docs.google.com/presentation/d/1gaGU2GqNPHXRrTmDg3sUqMhIZ7Ud56-eK7CwAFA9fug/edit#slide=id.g22cdfe0167f_0_446" target="_blank">Empowerment | Cars, Buses & Motorcycle</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">Pilgrimages | religious/faithful members & Executive</a></li>
+                            <li><a class="dropdown-item" href="#" target="_blank">Capacity Building | Trainnings, Workshops, & Seminars</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link hover_me text-success dropdown-toggle" href="#courses" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        FILES
+                        </a>
+                        <ul class="dropdown-menu mt-1" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://drive.google.com/folderview?id=1qMehPc0yfkuPZEVwqn9NoysY136PBHpB" target="_blank">Graphics | Fonts/PNG images</a></li>
+                            <li><a class="dropdown-item" href="https://forms.gle/ksSfUWtMD4nLYe3W9" target="_blank">WEB Assignments</a></li>
+                            <li><a class="dropdown-item" href="http://flexboxfroggy.com" target="_blank">Froggy playground</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/folderview?id=1GJnp5hXIOjtEUdjgAVV6a9pv965-COZV" target="_blank">Projects</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item me-lg-5">
+                        <a class="nav-link hover_me  text-success" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item p-1 ms-lg-3 pe-lg-2">
+                        <a class="nav-link btn btn-outline-success  text-success" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item p-1">
+                        <a href="register.html" class="nav-link btn btn-success text-white">Create Account</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!----------------Carousel Background image Section---------->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/aco121.jpg" class="d-block w-100" alt="background-image1">
+                        <div class="carousel-caption d-none d-lg-block" style="color: #009808;">
+                            <h1>Welcome to ACOMORAN (OGUN STATE CHAPTER)</h1>
+                            <h5> This is the only and official website of Amalgamated Commercial Motorcycle, Tricycle, Repairers and Riders Association of Nigeria (ACOMORAN).</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/aco122.jpg" class="d-block w-100" alt="background-image2">
+                        <div class="carousel-caption d-none d-lg-block" style="color: #fcf958;">
+                            <h1>Welcome to ACOMORAN (OGUN STATE CHAPTER)</h1>
+                            <h5>This is the only and official website of Amalgamated Commercial Motorcycle, Tricycle, Repairers and Riders Association of Nigeria (ACOMORAN).</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/img/aco123.jpg" class="d-block w-100" alt="background-image3">
+                        <div class="carousel-caption d-none d-lg-block" style="color: #009808;">
+                            <h1>Welcome to ACOMORAN (OGUN STATE CHAPTER)</h1>
+                            <h5>This is the only and official website of Amalgamated Commercial Motorcycle, Tricycle, Repairers and Riders Association of Nigeria (ACOMORAN).</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!--------------------About us section------------->
+            <section id="about_us">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="text-center mt-5 mb-3 text-success">About Us</h1>
+                        <div class="col-md-4">
+                            <div class="card shadow bg-body text-center mb-4 py-4 px-3">
+                                <div class="card-body" data-aos-delay="100">
+                                    <i class="bi bi-people-fill" style="font-size: 2rem; color: #009808;"></i>
+                                    <h4 class="card-title">Who we are</h4>
+                                    <p class="card-text">(ACOMORAN) is the foremost motorcycle and tricycle union in Nigeria.We set the pace for others.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow bg-body text-center mb-4 py-4 px-3">
+                                <div class="card-body"  data-aos-delay="100">
+                                    <i class="fa fa-cogs" style="font-size: 2rem; color: #009808;"></i>
+                                    <h4 class="card-title">Our Mission</h4>
+                                    <p class="card-text">To retain the medal of being the pioneer transport (Keke and Okada) union, and the best in all impactful projects in the state.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow bg-body text-center mb-4 py-4 px-3">
+                                <div class="card-body"  data-aos-delay="100">
+                                    <i class="bi bi-eye" style="font-size: 2rem; color: #009808;"></i>
+                                    <h4 class="card-title">Our Vision</h4>
+                                    <p class="card-text">To improve in all aspects of our operation, improve the livelihood of our members... </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </section>
+
+                <!---------------------------Features Section---------------------------------->
+                <section class="bg-light">
+                    <div class="container mb-md-5">
+                        <div class="row justify-content-center pb-2 pt-4 text-warning">
+                            <div class="col-12 text-center">
+                            <h1>Did You Know?</h1>
+                            </div>
+                        </div>
+                    
+                        <div class="row text-left align-items-center pt-3 pb-md-5" >
+                            <div class="col-4 col-md-5">
+                            <img alt="image" class="img-fluid" src="/img/npa.jpg">
+                            </div>
+                    
+                            <div class="col-12 col-md-5 m-md-auto">
+                            <h3><strong>The National President During the 2022 (Annual) ACOMORAN Stakeholders Summit in Abuja</strong></h3>
+                            <p class="lead">ACOMORAN is the only commercial motorcycle and tricycle union in Nigeria, that has her state chapters accross the country and her National headquarters in the FCT Abuja, Ably presided over by <strong>ALH (Ambassador) Prince Samsudeen Adebayo Apelogun</strong> </p>
+                            <p><a href="https://web.facebook.com/apelogun.ng" target="_blank">Learn More <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                    
+                        <div class="row text-left align-items-center pt-3 pb-md-5" >
+                            <div class="col-4 col-md-5 m-md-auto order-md-5">
+                            <img alt="image" class="img-fluid" src="/img/sowunmi.jpg">
+                            </div>
+                    
+                            <div class="col-12 col-md-5">
+                            <h3><strong>The State Chairman</strong></h3>
+                            <p class="lead">The Ogun State Chairman of ACOMORAN, <strong>Acom Kayode Sowunmi Amos (JP)</strong> is an astute Transporter of over 3 decades and an excutive in the ACOMORAN for more than 15years before he was elected as the Chairman on February 23 2020.</p>
+                            <p><a href="#">Learn More <i class="fas fa-angle-right"></i></a></p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+
+                    <!----------------------Our Achievements--------------------->
+                        <div class="container" id="courses">
+                            <h1 class="text-center mt-4 mb-4 text-warning">Our Achievements at a Glance</h1>
+                        <div class="row row-cols-1 row-cols-md-4 g-4" >
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="/img/empowerment.jpg" class="card-img-top rounded-top" alt="html img">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Empowerment of our State, Senatorial, and Branch Excos</h5>
+                                        <p class="card-text">We empower our executives at all levels periodically with car, buses, and motorcycle gifts amongst others, to encourage them and show a sign of gratitude for their selfless services towards the improvement of ACOMORAN.</p>
+                                        <a href="#" class="btn btn-success" target="_blank">Explore</a>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="/img/aco6.jpg" class="card-img-top rounded-top" alt="html img">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Participation in Government activities</h5>
+                                        <p class="card-text">ACOMORAN as the pioneer motorcycle union in Ogun State is always at the forefront of any Government public activities, the association is always represented by the State Chairman and his executives.</p>
+                                        <a href="#" target="_blank" class="btn btn-success">Explore</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img src="/img/aco3.jpg" class="card-img-top rounded-top" alt="css img">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Seminar on Managing insecurity</h5>
+                                    <p class="card-text">A day seminar on security Strategy in managing Elementary and High Schools Amidst insecurity in Nigeria.</p>
+                                    <a href="https://docs.google.com/presentation/d/1_xZMSyW2lzBQ3nseNPJ67hriFWRe-4bVZJedIb2fCz4/edit#slide=id.g22d25465d94_0_240" target="_blank" class="btn btn-success">Explore</a>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col">
+                                <div class="card h-100">
+                                    <img src="/img/aco4.jpg" class="card-img-top rounded-top" alt="img js">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Digital Means of Identification & Database</h5>
+                                    <p class="card-text">Amongst the many first from ACOMORAN is the computerised Identification card and a comprehensive database for all exco at all levels and members.</p>
+                                    <a href="ACOMORAN/database.host" target="_blank" class="btn btn-success">Explore</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row row-cols-1 row-cols-md-4 g-4 mt-lg-3" >
+                                <div class="col">
+                                    <div class="card h-100">
+                                        <img src="/img/pilgrim1.jpg" class="card-img-top rounded-top" alt="wp">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Pilgrimage to Hajj & Jerusalem.</h5>
+                                        <p class="card-text">Yearly pilgrimage to the Holy land for faithful Christian and muslim members is our tradition.</p>
+                                        <a href="ACOMORAN/database.host" target="_blank" class="btn btn-success">Explore</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="/img/office-commissioning.jpg" class="card-img-top rounded-top" alt="html img">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Building the Ultra-modern State Office.</h5>
+                                            <p class="card-text">The Ultra-modern state Secretariat was geniusly conceptualised by our National President <strong>Alh (Ambassador) Prince Adebayo Samsudeen Apelogun</strong> and was executed and commissioned during his tenure of office.</p>
+                                            <a href="ACOMORAN/database.host" target="_blank" class="btn btn-success">Explore</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    <div class="col">
+                                    <div class="card h-100">
+                                        <img src="/img/aco5.jpg" class="card-img-top rounded-top" alt="img js">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Co-operation with other unions in the state</h5>
+                                        <p class="card-text">We collaborate with other transport union in the state, primarily for the success of the government in power and the benefit of the citizen of the state.</p>
+                                        <a href="ACOMORAN/database.host" target="_blank" class="btn btn-success">Explore</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="/img/aco.jpg" class="card-img-top rounded-top" alt="css img">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Synergy with other states and National Body</h5>
+                                            <p class="card-text">The synergy between ACOMORAN Ogun State and other state across the country and the national of is great we participate in all activities and our impact is in no little measure.</p>
+                                            <a href="ACOMORAN/database.host" class="btn btn-success" target="_blank">Explore</a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                <!--------------------Team Instructor---------------------->
+                <section class="bg-light" id="team">
+                    <div class="container">
+                        <div class="row text-center justify-content-center mt-md-5 text-success">
+                            <div class="col-8 mt-3">
+                                <h1>Meet Our Principal Officers</h1>
+                            </div>
+                        </div>
+                    
+                        <div class="row text-center mt-4 justify-content-lg-around">
+                            <div class=" col-4 col-lg-3" >
+                                <img alt="image" class="img-fluid rounded-circle" src="/img/bb33.png">
+                                <h3><strong>ACOMORAN Executive</strong></h3>
+                                <p>Position</p>
+                            </div>
+                    
+                            <div class="col-4 col-lg-3"  data-aos-delay="10">
+                            <img alt="image" class="img-fluid rounded-circle" src="/img/Acomoran.jpg">
+                            <h3><strong>ACOMORAN Executive</strong></h3>
+                            <p>Position</p>
+                            </div>
+                    
+                            <div class="col-4 col-lg-3" >
+                            <img alt="image" class="img-fluid rounded-circle" src="/img/bb4.jpg">
+                            <h3><strong>ACOMORAN Executive</strong></h3>
+                            <p>Position</p>   
+                        </div>
+                        </div>
+                        <div class="row text-center mt-4 justify-content-center">
+                            <div class="col-4" >
+                                <img alt="image" class="img-fluid rounded-circle" src="/img/bb33.png">
+                                <h3><strong>ACOMORAN Executive</strong></h3>
+                                <p>Position</p>
+                            </div>
+                    
+                            <div class="col-4" >
+                            <img alt="image" class="img-fluid rounded-circle" src="/img/bb4.jpg">
+                            <h3><strong>ACOMORAN Executive</strong></h3>
+                            <p>Position</p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+            <!--------------------Contact Us--------------->
+            <section class="mb-5" id="contact">
+                <div class="container">
+                    <div class="row text-center justify-content-center text-warning">
+                        <div class="col-12 col-md-8 col-lg-7 mt-4">
+                        <h1>Contact Us</h1>
+                        <div class="oceanwp-social-menu clr simple-social" style="display: inline-flex;">
+
+                            <div class="social-menu-inner clr">
+                                    <ul aria-label="Social links">
+                                        <li class="oceanwp-facebook"><a href="https://www.facebook.com/acomorannigeria/" aria-label="Facebook (opens in a new tab)" target="_blank" rel="noopener noreferrer"><i class=" fab fa-facebook" aria-hidden="true" role="img" ></i></a></li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, enim.</p>
+                        </div>
+                    </div>
+                
+                    <div class="row pt-4">
+                        <div class="col-12 col-md-6">
+                            
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63341.897102245435!2d3.2577628312500075!3d7.141193399999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4c6bf6761b89%3A0x7564e2fead7f3797!2sPepsi%20Bus%20Stop!5e0!3m2!1sen!2sng!4v1680155874200!5m2!1sen!2sng" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                
+                        <div class="col-12 col-md-6 pt-5 pt-md-0">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="name" class="form-control" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Enter email">
+                            </div>
+                            </div>
+                
+                            <div class="row mt-4">
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Subject">
+                            </div>
+                            </div>
+                            <div class="row mt-4">
+                            <div class="col">
+                                <textarea class="form-control" name="message" rows="3" placeholder="How can we help?"></textarea>
+                            </div>
+                            </div>
+                            <div class="row mt-4">
+                            <div class="col">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <!---------------------Footer------------------------->
+                <footer style="background-color: #309800;">
+                    <div class="container">
+                        <div class="row justify-content-lg-start">
+                            <div class="col">
+                                <p class="text-white pt-2"><img src="/img/Acomoran.png" width="25" height="25" alt="icon">ACOMORAN. © 2023 | All Rights Reserved</p>
+                            </div>
+                            <ul class="nav justify-content-lg-end justify-content-center col-12 col-lg-4 text-lg-right">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" href="#about_us">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white fw-bold" href="#courses">Branches</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+                <!------<footer class="footer-small" style="background-color: #004A98;">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col">
+                                <p class="text-white "><img src="/img/fav_icon.png" width="25" height="25" alt="icon">New Horizons. © 2022 | All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>------->
+
+
+    <script src="/js/script.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
